@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+<script>
+    function windowgit(){
+        window.open("https://github.com/Sumedh2612")
+    
+    }
+    function windowcv(){
+        window.open("Sumedh_Resume112233 (1).pdf")
+    }
+</script>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Sumedh's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="http://127.0.0.1:5500/">Home</a></li>
+                    <li><a href="#summary">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                </ul>
+            </div>
+
+        </nav>
+    </header>
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hi, my name is <span class="purple">Sumedh</span>
+                <div>and i am a passionate <br>
+
+                </div>
+                <span id="element"></span>
+                <div class="button">
+                    <button class="btn" onclick=windowcv()>Download Resume</button>
+                    <button class="button1"onclick=windowgit()>Visit Github</button>
+                </div>
+            </div>
+            
+            <div class="rightSection">
+                <img src="pngtree-modern-flat-design-concept-of-programmers-at-work-concept-software-development-png-image_2157879-removebg-preview.png"
+                    alt="">
+            </div>
+        </section>
+        <hr>
+        <section id="summary" class="mb-5">
+            <h1>Summary</h1><br>
+            <p>Passionate Front-End Developer with hands-on experience in building responsive, user-friendly websites and web applications.<br> Proficient in <span class="violet">HTML, CSS, and JavaScript</span>, with an understanding of modern frameworks. Skilled in creating visually appealing designs using <span class="red">Tailwind CSS and Bootstrap</span> , eager to contribute technical skills.</p>
+        </section>
+        <hr>
+        <section id="projects">
+            <h2>Projects</h2><br>
+            <ul>
+                <li><strong><span class="hii">Project Objective:</span></strong> Developed a bot to extract information and answer questions from PDFs
+                    using advanced AI techniques.</li><br>
+                    <li><strong><span class="hii">Technology Stack:</span></strong> •LLMs (GPT)for natural language understanding
+                       <br> • NLP for text classification ,keyword extraction ,and semantic search...</li><br>
+                       <li><strong><span class="hii">Challenges:</span></strong> Addressed issues with complex PDF layouts and context retention in long
+                        documents.</li><br>
+                        <li><strong><span class="hii">Outcome:</span></strong> Created a scalable ,accurate bot for industries like education, legal ,and
+                            research.</li><br>
+            </ul>
+        </section>
+        <hr>
+        <section id="contact" class="mb-5">
+            <h2>Contact</h2><br>
+            <p>Feel free to reach out to me!</p>
+            <ul>
+                <li><strong>Email:</strong> <a href="#" style="color: #FFFFFF;">sumedhpunekar@gmail.com</a></li><br>
+                <li><strong>Phone:</strong> <a href="#" style="color: #FFFFFF;">7774078011</a></li><br>
+                <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/sumedh-punekar-65a576262/" style="color: #FFFFFF;">Linkedin</a></li>
+                
+            </ul>
+        </section>
+        <section id="contact1" class="row fade-in">
+            <div class="column contact-content">
+                <h2 class="animate-text">Contact Me</h2>
+                <form id="contactForm" class="form-animate">
+                    <label for="name" class="animate-label">Name:</label>
+                    <input type="text" id="name" name="name" required class="animate-input"><br>
+                    
+                    <label for="email" class="animate-label">Email:</label>
+                    <input type="email" id="email" name="email" required class="animate-input"><br>
+        
+                    <label for="mess" class="animate-label"> Message:</label>
+                    <input type="mess" id="mess" name="mess" required class="animate-input"><br>
+                    
+                    <button type="submit" class="submitbtt">Send Message</button>
+                </form>
+        
+                <!-- Confirmation Message -->
+                <div id="confirmationMessage" class="confirmation-message"></div>
+            </div>
+        </section>
+
+    </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Software Developer.', ' Data Analyst.'],
+            typeSpeed: 50,
+        });
+    </script>
+    <footer>
+        <div class="rights">&#169;All Rights Reserved</div>
+       <p>Sumedh's Portfolio</p>
+      </footer>
+    
+
+</body>
+
+</html>
